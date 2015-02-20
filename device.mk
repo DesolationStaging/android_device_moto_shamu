@@ -155,21 +155,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.audio.fluence.voicerec=false \
     persist.audio.fluence.speaker=false \
     ro.audio.monitorRotation=true
-
-# Viper4Android entries
-PRODUCT_PROPERTY_OVERRIDES += \
-	lpa.decode=false \
-	lpa.releaselock=false \
-	lpa.use-stagefright=false \
-	tunnel.decode=false	
-	
-PRODUCT_COPY_FILES += \
-    device/moto/shamu/viper/Viper4Android.apk:system/app/Viper4Android/Viper4Android.apk \
-	device/moto/shamu/viper/libv4a_fx_ics.so:system/lib/soundfx/libv4a_fx_ics.so \
-	device/moto/shamu/priv-app/TriggerEnroll/TriggerEnroll.apk:system/priv-app/TriggerEnroll/TriggerEnroll.apk \
-	device/moto/shamu/priv-app/TriggerTrainingService/TriggerTrainingService.apk:system/priv-app/TriggerTrainingService/TriggerTrainingService.apk \
-	device/moto/shamu/etc/permissions/com.motorola.triggerenroll.xml:system/etc/permissions/com.motorola.triggerenroll.xml \
-	device/moto/shamu/lib/libtrainingcheck.so:system/lib/libtrainingcheck.so
 	
 # Audio effects
 PRODUCT_PACKAGES += \
