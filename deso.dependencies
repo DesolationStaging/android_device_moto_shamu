@@ -10,4 +10,5 @@
 	"repository": "TheMuppets/proprietary_vendor_motorola/shamu"
 	"target_path": "vendor/motorola/shamu"
 	"revision": "cm-12.0"
+   )
 ]
