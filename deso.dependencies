@@ -1,14 +1,14 @@
 [
   {
-    "remote": "cm"
+    "remote": "cm",
 	"repository": "android_kernel_moto_shamu",
-    "target_path": "kernel/moto/shamu"
+    "target_path": "kernel/moto/shamu",
 	"revision": "cm-12.0"
-  }
+  },
   {
-	"remote": "github"
-	"repository": "TheMuppets/proprietary_vendor_motorola/shamu"
-	"target_path": "vendor/motorola/shamu"
+	"remote": "github",
+	"repository": "TheMuppets/proprietary_vendor_motorola",
+	"target_path": "vendor/motorola",
 	"revision": "cm-12.0"
    }
 ]
