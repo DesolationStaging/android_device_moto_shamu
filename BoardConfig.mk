@@ -19,8 +19,17 @@ TARGET_CPU_ABI2 := armeabi
 TARGET_ARCH := arm
 TARGET_ARCH_VARIANT := armv7-a-neon
 TARGET_CPU_VARIANT := krait
-
 TARGET_NO_BOOTLOADER := true
+
+# Custom toolchains
+#TARGET_GCC_VERSION_ARM := 4.8
+TARGET_GCC_VERSION_EXP := 4.8
+
+# Build optimizations
+OPT_MEMORY := true
+TARGET_USE_O3 := true
+STRICT_ALIASING := true
+SUPPRES_UNUSED_WARNING := true
 
 # Inline kernel building
 TARGET_KERNEL_CONFIG := shamu_defconfig
