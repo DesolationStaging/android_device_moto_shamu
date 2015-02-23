@@ -22,10 +22,10 @@ TARGET_CPU_VARIANT := krait
 TARGET_NO_BOOTLOADER := true
 
 # Custom toolchains
-#TARGET_GCC_VERSION_ARM := 4.8
-TARGET_GCC_VERSION_EXP := 4.8
+TARGET_GCC_VERSION_EXP := 4.8-sm
+TARGET_GCC_VERSION_ARM := arm-eabi-4.8-sm
 
-# Build optimizations
+# Optimize build
 OPT_MEMORY := true
 TARGET_USE_O3 := true
 STRICT_ALIASING := true
