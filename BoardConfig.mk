@@ -23,7 +23,8 @@ TARGET_NO_BOOTLOADER := true
 
 # Custom toolchains
 TARGET_GCC_VERSION_EXP := 4.8-sm
-TARGET_GCC_VERSION_ARM := arm-eabi-4.8-sm
+TARGET_GCC_VERSION_ARM := arm-eabi-4.9-ln
+TARGET_KERNEL_TC_SUFFIX := arm-cortex_a15-linux-gnueabihf-
 
 # Optimize build
 OPT_MEMORY := true
