@@ -93,6 +93,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     device/moto/shamu/spn-conf.xml:system/etc/spn-conf.xml
 
+# Kernel Configuration
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/etc/init.d/92Elite:system/etc/init.d/92Elite \
+    
 PRODUCT_TAGS += dalvik.gc.type-precise
 
 # This device is 560dpi.  However the platform doesn't
