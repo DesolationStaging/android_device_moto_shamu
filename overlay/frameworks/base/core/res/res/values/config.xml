@@ -320,15 +320,15 @@
     <!-- Default LED off time for notification LED in milliseconds. -->
     <integer name="config_defaultNotificationLedOff">9000</integer>
 
-    <!-- Is the battery LED intrusive? Used to decide if there should be a disable option -->
-    <bool name="config_intrusiveBatteryLed">true</bool>
+    <!-- Is the battery LED intrusive? Used to decide if there should be a disable option
+    <bool name="config_intrusiveBatteryLed">true</bool> -->
 
     <!-- Does the notification LED support multiple colors?
-         Used to decide if the user can change the colors -->
-    <bool name="config_multiColorNotificationLed">true</bool>
+         Used to decide if the user can change the colors
+    <bool name="config_multiColorNotificationLed">true</bool> -->
 
-    <!-- Does the battery LED support multiple colors? Used to decide if the user can change the colors -->
-    <bool name="config_multiColorBatteryLed">true</bool>
+    <!-- Does the battery LED support multiple colors? Used to decide if the user can change the colors
+    <bool name="config_multiColorBatteryLed">true</bool> -->
 
     <!-- Whether WiFi display is supported by this device.
     There are many prerequisites for this feature to work correctly.
@@ -344,9 +344,9 @@
     -->
     <bool name="config_enableWifiDisplay">true</bool>
 
-    <!-- Device will display option to wake only if proximity sensor is uncovered -->
+    <!-- Device will display option to wake only if proximity sensor is uncovered
     <bool name="config_proximityCheckOnWake">true</bool>
-    <integer name="config_proximityCheckTimeout">400</integer>
+    <integer name="config_proximityCheckTimeout">400</integer> -->
 
     <!-- Maximum number of supported users -->
     <integer name="config_multiuserMaximumUsers">4</integer>
