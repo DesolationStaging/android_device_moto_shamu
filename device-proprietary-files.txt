@@ -225,6 +225,9 @@ etc/firmware/cpp_firmware_v1_2_0.fw
 etc/firmware/cpp_firmware_v1_6_0.fw
 etc/firmware/cpp_firmware_v1_8_0.fw
 
+# Contacts adapter
+-priv-app/BuaContactAdapter/BuaContactAdapter.apk
+
 # Diagnostic
 bin/diag_klog
 bin/diag_mdlog
@@ -233,8 +236,8 @@ bin/PktRspTest
 bin/ramdump
 bin/rundiag
 bin/test_diag
-etc/diag/FIT_V12.cfg
-etc/diag/mdm/FIT_V12.cfg
+etc/diag/mdm/FIT_V15_audio.cfg
+etc/diag/mdm/FIT_V15.cfg
 etc/diag/mdm/sensors_qxdm.cfg
 etc/diag/sensors_qxdm.cfg
 
@@ -248,6 +251,7 @@ vendor/lib/libdrmfs.so
 vendor/lib/libdrmtime.so
 vendor/lib/liboemcrypto.so
 vendor/lib/librpmb.so
+vendor/lib/libssd.so
 vendor/lib/libwvdrm_L1.so
 vendor/lib/libwvm.so
 vendor/lib/libWVphoneAPI.so
@@ -267,6 +271,7 @@ vendor/lib/egl/libEGL_adreno.so
 vendor/lib/egl/libGLESv1_CM_adreno.so
 vendor/lib/egl/libGLESv2_adreno.so
 vendor/lib/egl/libq3dtools_adreno.so
+vendor/lib/egl/libq3dtools_esx.so
 vendor/lib/libadreno_utils.so
 vendor/lib/libbccQTI.so
 vendor/lib/libC2D2.so
@@ -287,12 +292,10 @@ vendor/firmware/a420_pm4.fw
 
 # GPS
 etc/flp.conf
-etc/sap.conf
 lib/hw/gps.msm8084.so
 lib/libgps.utils.so
 lib/libloc_core.so
 lib/libloc_eng.so
-vendor/bin/gsiff_daemon
 vendor/lib/hw/activity_recognition.msm8084.so
 vendor/lib/hw/flp.msm8084.so
 vendor/lib/libgeofence.so
@@ -386,7 +389,7 @@ vendor/lib/libTimeService.so
 
 # Touch firmware
 vendor/firmware/atmel-a432-14061601-0102aa-shamu-p1.tdat
-vendor/firmware/atmel-a432-14101503-0103aa-shamu.tdat
+vendor/firmware/atmel-a432-14103001-0103aa-shamu.tdat
 
 #USB
 bin/port-bridge

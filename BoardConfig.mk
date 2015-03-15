@@ -19,6 +19,7 @@ TARGET_CPU_ABI2 := armeabi
 TARGET_ARCH := arm
 TARGET_ARCH_VARIANT := armv7-a-neon
 TARGET_CPU_VARIANT := krait
+
 TARGET_NO_BOOTLOADER := true
 
 # Custom toolchains
@@ -55,6 +56,10 @@ MAX_EGL_CACHE_KEY_SIZE := 12*1024
 # binaries. Decrease the size if RAM or Flash Storage size is a limitation
 # of the device.
 MAX_EGL_CACHE_SIZE := 2048*1024
+
+# Maximum dimension (width or height) of a virtual display that will be
+# handled by the hardware composer
+MAX_VIRTUAL_DISPLAY_DIMENSION := 2048
 
 BOARD_EGL_CFG := device/moto/shamu/egl.cfg
 
@@ -128,6 +133,7 @@ BOARD_SEPOLICY_DIRS += \
 
 BOARD_SEPOLICY_UNION += \
         adspd.te \
+        atfwd.te \
         bluetooth.te \
         bluetooth_loader.te \
         bootanim.te \
@@ -137,6 +143,7 @@ BOARD_SEPOLICY_UNION += \
         domain.te \
         file.te \
         gsiffd.te \
+        ims.te \
         irsc_util.te \
         mdm_helper.te \
         mediaserver.te \
@@ -144,10 +151,13 @@ BOARD_SEPOLICY_UNION += \
         netd.te \
         netmgrd.te \
         platform_app.te \
+        property.te \
+        property_contexts \
         qmux.te \
         radio.te \
         rild.te \
         sensors.te \
+        service.te \
         ss_ramdump.te \
         surfaceflinger.te \
         system_app.te \
@@ -176,9 +186,6 @@ BOARD_HAS_AUDIO_DSP := true
 USE_DEVICE_SPECIFIC_CAMERA:= true
 
 BOARD_HAL_STATIC_LIBRARIES := libdumpstate.shamu
-
-# Time
-BOARD_USES_QC_TIME_SERVICES := true
 
 # Include an expanded selection of fonts
 EXTENDED_FONT_FOOTPRINT := true

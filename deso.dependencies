@@ -1,8 +1,8 @@
 [
   {
-    "remote": "deso-device",
+        "remote": "deso-device",
 	"repository": "elite_kernel_shamu",
-    "target_path": "kernel/moto/shamu",
+        "target_path": "kernel/moto/shamu",
 	"revision": "lp-mr1"
   },
   {
