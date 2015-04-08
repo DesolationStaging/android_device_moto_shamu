@@ -1,6 +1,15 @@
-# Boot animation
+# Device resolution
 TARGET_SCREEN_HEIGHT := 1440
 TARGET_SCREEN_WIDTH := 2560
+
+# Device hardware info
+PRODUCT_CHIPSET := Qualcomm Snapdragon 805
+PRODUCT_CPU := Quad-core 2.7 GHz Krait 450
+PRODUCT_GPU := Adreno 420
+PRODUCT_REAR_CAM := 13.0 MP 4128 x 3096 pixels
+PRODUCT_FRONT_CAM := 2.0 MP 1600 x 1200 pixels
+PRODUCT_SCREEN_SIZE := 5.96in ~493 ppi (AMOLED Display)
+PRODUCT_SCREEN_RES := $(TARGET_SCREEN_WIDTH) x $(TARGET_SCREEN_HEIGHT)
 
 #Inherit some common Desolation stuff.
 $(call inherit-product, vendor/deso/config/common.mk)
