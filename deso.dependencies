@@ -3,7 +3,7 @@
         "remote": "deso-device",
 	"repository": "elite_kernel_shamu",
         "target_path": "kernel/moto/shamu",
-	"revision": "lp-mr1"
+	"revision": "Elite"
   },
   {
 	"remote": "gh",
