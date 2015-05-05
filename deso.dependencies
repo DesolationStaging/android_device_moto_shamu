@@ -1,14 +1,14 @@
 [
   {
-        "remote": "deso-device",
-	"repository": "elite_kernel_shamu",
-        "target_path": "kernel/moto/shamu",
-	"revision": "Elite"
+    "remote": "gh",
+    "repository": "Elite-Kernels/elite_shamu",
+    "target_path": "kernel/moto/shamu",
+    "revision": "Elite"
   },
   {
-	"remote": "gh",
-	"repository": "TheMuppets/proprietary_vendor_motorola",
-	"target_path": "vendor/motorola",
-	"revision": "cm-12.1"
+    "remote": "gh",
+    "repository": "TheMuppets/proprietary_vendor_motorola",
+    "target_path": "vendor/motorola",
+    "revision": "cm-12.1"
    }
 ]

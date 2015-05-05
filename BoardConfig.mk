@@ -23,7 +23,7 @@ TARGET_CPU_VARIANT := krait
 TARGET_NO_BOOTLOADER := true
 
 # Custom toolchains
-TARGET_GCC_VERSION_EXP := 4.8-sm
+TARGET_GCC_VERSION_EXP := 4.9
 TARGET_GCC_VERSION_ARM := arm-eabi-4.9-ln
 TARGET_KERNEL_TC_SUFFIX := arm-cortex_a15-linux-gnueabihf-
 
@@ -187,11 +187,11 @@ USE_DEVICE_SPECIFIC_CAMERA:= true
 
 BOARD_HAL_STATIC_LIBRARIES := libdumpstate.shamu
 
+# Time
+BOARD_USES_QC_TIME_SERVICES := true
+
 # Include an expanded selection of fonts
 EXTENDED_FONT_FOOTPRINT := true
-
-# CMHW
-BOARD_HARDWARE_CLASS := device/moto/shamu/cmhw
 
 # Enable workaround for slow rom flash
 BOARD_SUPPRESS_SECURE_ERASE := true
