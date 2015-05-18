@@ -1,0 +1,4 @@
+<resources>
+  <!-- Allow Quickboot mode to be (en|dis)abled in development options-->
+  <bool name="configAllow_Quickboot">false</bool>
+</resources>
