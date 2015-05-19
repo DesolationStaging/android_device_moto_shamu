@@ -12,10 +12,7 @@ PRODUCT_SCREEN_SIZE := 5.96in ~493 ppi (AMOLED Display)
 PRODUCT_SCREEN_RES := $(TARGET_SCREEN_WIDTH) x $(TARGET_SCREEN_HEIGHT)
 
 #Inherit some common Desolation stuff.
-$(call inherit-product, vendor/deso/config/common.mk)
-
-# Enhanced NFC
-$(call inherit-product, vendor/deso/config/telephony.mk)
+$(call inherit-product, vendor/deso/config/common_phone.mk)
 
 # Enhanced NFC
 $(call inherit-product, vendor/deso/config/nfc_enhanced.mk)
